@@ -1,0 +1,6 @@
+(define multiples (lambda (base n)
+	(let ((count 1))
+	(cond ((and (> n 0) (< (* count base ) n))
+	(cons (* base count)(+ count 1)))
+	((<= (* base count) n) (+ count 1))
+	((> (* base count) n) '())))))
